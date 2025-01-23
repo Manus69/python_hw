@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    scroll-behavior: smooth;
+    background: #020A18;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+img
+{
+    max-width: 100%;
+    display: block;
+}
+
+button
+{
+    border: none;
+    cursor: pointer;
+}
+
+.container
+{
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.header
+{
+    padding: 39px 0px;
+    background: #0a121f;
+    margin-bottom: 160px;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.link
+{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.title
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #3a68b8;
+    margin-bottom: 10px;
+}
+
+.subtitle
+{
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.text
+{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+    max-width: 558px;
+}
+
+.btn-box
+{
+    display: flex;
+    gap: 20px;
+}
+
+.btn
+{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    background: #3a68b8;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.btn-watch
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main
+{
+    margin-bottom: 197px;
+}
+
+.main-content
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content
+{
+    max-width: 604px;
+}
+
+.footer
+{
+    margin-bottom: 99px;
+}
+
+.logos
+{
+    display: flex;
+    justify-content: space-between;
+}
