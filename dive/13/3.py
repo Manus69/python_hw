@@ -12,6 +12,8 @@ class Game:
         self.current = 0
         self.filename = filename
 
+        open(self.filename, "w")
+
     def _roll_check(self):
         return random.randint(0, Game._p) == 0
 
@@ -21,6 +23,8 @@ class Game:
         try:
             x = int(input("Enter a number: "))
             self.current += x
+            with open(self.filename, "a") as f: f.write(x.__str__())
+
             if self.current >= self.n: return Res.WIN
         except Exception as ex:
             print(ex)
