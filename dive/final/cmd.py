@@ -5,11 +5,11 @@ from argparse import ArgumentParser
 
 _LOGFNAME = ".log.log"
 Info = namedtuple("Info", ["name", "ext", "is_dir", "parent"])
-logging.basicConfig(filename=_LOGFNAME, level=logging.INFO, format="%(asctime)s - %(message)s")
+logging.basicConfig(filename=_LOGFNAME, filemode="w", level=logging.INFO, format="%(asctime)s - %(message)s")
 
 def _Info_str(info):
     ext = "n/a" if info.ext is None else info.ext
-    dir = "dir" if info.dir else "file"
+    dir = "dir" if info.is_dir else "file"
 
     return f"{info.name}, {ext}, {dir}, {info.parent}"
 
