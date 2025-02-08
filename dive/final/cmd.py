@@ -25,7 +25,6 @@ def get_info(path):
             info = Info(name=item, ext=None, is_dir=True, parent=parent)
         else:
             name, ext = os.path.splitext(item)
-
             info = Info(name=name, ext=ext, is_dir=False, parent=parent)
 
         logging.info(_Info_str(info))
